@@ -1,12 +1,12 @@
 import HomePage from "./pages/HomePage";
-// import Navbar from "./components/Navbar";
+import { DataProvider } from './GlobalState'
 
 function App() {
   return (
-    <div className="App">
+    <DataProvider>
       {/* <Navbar /> */}
       <HomePage />
-    </div>
+    </DataProvider>
   );
 }
 
